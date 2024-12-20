@@ -1,0 +1,67 @@
+{
+    "braketSchemaHeader": {
+        "name": "braket.task_result.gate_model_task_result",
+        "version": "1"
+    },
+    "measurementProbabilities": {
+        "0000": 0.000244140625,
+        "1000": 0.00390625,
+        "0100": 0.006591796875,
+        "1100": 0.000732421875,
+        "0010": 0.010009765625,
+        "1010": 0.2421875,
+        "0110": 0.241455078125,
+        "1110": 0.00341796875,
+        "0001": 0.006103515625,
+        "1001": 0.237548828125,
+        "0101": 0.23486328125,
+        "1101": 0.00341796875,
+        "0011": 0.00048828125,
+        "1011": 0.005126953125,
+        "0111": 0.003662109375,
+        "1111": 0.000244140625
+    },
+    "resultTypes": [],
+    "measuredQubits": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "taskMetadata": {
+        "braketSchemaHeader": {
+            "name": "braket.task_result.task_metadata",
+            "version": "1"
+        },
+        "id": "arn:aws:braket:us-east-1:516167953808:quantum-task/b84ef362-b74d-4c7b-9da3-077e94637c1d",
+        "shots": 4096,
+        "deviceId": "arn:aws:braket:us-east-1::device/qpu/ionq/Aria-1",
+        "deviceParameters": {
+            "braketSchemaHeader": {
+                "name": "braket.device_schema.ionq.ionq_device_parameters",
+                "version": "1"
+            },
+            "paradigmParameters": {
+                "braketSchemaHeader": {
+                    "name": "braket.device_schema.gate_model_parameters",
+                    "version": "1"
+                },
+                "qubitCount": 4,
+                "disableQubitRewiring": true
+            }
+        },
+        "createdAt": "2024-11-19T06:13:39.716Z",
+        "endedAt": "2024-11-19T06:15:28.123Z",
+        "status": "COMPLETED"
+    },
+    "additionalMetadata": {
+        "action": {
+            "braketSchemaHeader": {
+                "name": "braket.ir.openqasm.program",
+                "version": "1"
+            },
+            "source": "OPENQASM 3.0;\nbit[4] b;\n#pragma braket verbatim\nbox{\ngpi(0.0) $1;\ngpi(0.0) $3;\nms(0.0, 0.0, 1.5707963267948966) $1, $0;\ngpi2(3.141592653589793) $0;\ngpi2(3.141592653589793) $1;\ngpi2(1.5707963267948966) $1;\nms(0.0, 0.0, 1.5707963267948966) $3, $2;\ngpi2(3.141592653589793) $2;\ngpi2(3.141592653589793) $3;\ngpi2(1.5707963267948966) $3;\ngpi2(1.5707963267948966) $0;\ngpi(0.0) $0;\ngpi2(1.5707963267948966) $1;\ngpi(0.0) $1;\ngpi2(1.5707963267948966) $2;\ngpi(0.0) $2;\ngpi2(1.5707963267948966) $3;\ngpi(0.0) $3;\n}\nb[0] = measure $0;\nb[1] = measure $1;\nb[2] = measure $2;\nb[3] = measure $3;",
+            "inputs": {}
+        }
+    }
+}

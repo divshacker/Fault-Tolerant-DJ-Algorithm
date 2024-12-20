@@ -1,0 +1,65 @@
+{
+    "braketSchemaHeader": {
+        "name": "braket.task_result.gate_model_task_result",
+        "version": "1"
+    },
+    "measurementProbabilities": {
+        "0000": 0.000732421875,
+        "1000": 0.007568359375,
+        "0100": 0.005615234375,
+        "0010": 0.007568359375,
+        "1010": 0.232666015625,
+        "0110": 0.2421875,
+        "1110": 0.005615234375,
+        "0001": 0.00830078125,
+        "1001": 0.235107421875,
+        "0101": 0.23876953125,
+        "1101": 0.006591796875,
+        "0011": 0.00048828125,
+        "1011": 0.003173828125,
+        "0111": 0.005615234375
+    },
+    "resultTypes": [],
+    "measuredQubits": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "taskMetadata": {
+        "braketSchemaHeader": {
+            "name": "braket.task_result.task_metadata",
+            "version": "1"
+        },
+        "id": "arn:aws:braket:us-east-1:516167953808:quantum-task/9d531fe9-05d5-4b9e-bdf3-041425c45737",
+        "shots": 4096,
+        "deviceId": "arn:aws:braket:us-east-1::device/qpu/ionq/Aria-1",
+        "deviceParameters": {
+            "braketSchemaHeader": {
+                "name": "braket.device_schema.ionq.ionq_device_parameters",
+                "version": "1"
+            },
+            "paradigmParameters": {
+                "braketSchemaHeader": {
+                    "name": "braket.device_schema.gate_model_parameters",
+                    "version": "1"
+                },
+                "qubitCount": 4,
+                "disableQubitRewiring": true
+            }
+        },
+        "createdAt": "2024-11-19T06:26:58.559Z",
+        "endedAt": "2024-11-19T06:30:08.195Z",
+        "status": "COMPLETED"
+    },
+    "additionalMetadata": {
+        "action": {
+            "braketSchemaHeader": {
+                "name": "braket.ir.openqasm.program",
+                "version": "1"
+            },
+            "source": "OPENQASM 3.0;\nbit[4] b;\n#pragma braket verbatim\nbox{\ngpi(0.0) $1;\ngpi(0.0) $3;\nms(0.0, 0.0, 1.5707963267948966) $1, $0;\ngpi2(3.141592653589793) $0;\ngpi2(3.141592653589793) $1;\ngpi2(1.5707963267948966) $1;\nms(0.0, 0.0, 1.5707963267948966) $3, $2;\ngpi2(3.141592653589793) $2;\ngpi2(3.141592653589793) $3;\ngpi2(1.5707963267948966) $3;\ngpi(3.141592653589793) $0;\ngpi(1.5707963267948966) $0;\ngpi(3.141592653589793) $1;\ngpi(1.5707963267948966) $1;\ngpi2(1.5707963267948966) $0;\ngpi(0.0) $0;\ngpi2(1.5707963267948966) $1;\ngpi(0.0) $1;\ngpi2(1.5707963267948966) $2;\ngpi(0.0) $2;\ngpi2(1.5707963267948966) $3;\ngpi(0.0) $3;\n}\nb[0] = measure $0;\nb[1] = measure $1;\nb[2] = measure $2;\nb[3] = measure $3;",
+            "inputs": {}
+        }
+    }
+}
