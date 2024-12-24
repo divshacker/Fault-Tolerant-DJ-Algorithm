@@ -2,7 +2,7 @@
 
 This code implements the Deutsch-Jozsa Algorithm in a fault-tolerant manner and has been tested on the Ion Trap QPU [IonQ Aria-1](https://ionq.com/quantum-systems/aria). The implementation leverages several Python packages, including `qiskit`, `qiskit-ionq`, and `qiskit-braket-provider`.
 
-The experiment involves the fault-tolerant implementation of the Deutsch-Jozsa Algorithm, utilizing a small quantum error-detecting code \([[4,2,2]]\).
+The experiment involves the fault-tolerant implementation of the Deutsch-Jozsa Algorithm, utilizing a small quantum error-detecting code $[[4,2,2]]$.
 
 
 For more information you can read :
