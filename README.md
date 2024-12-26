@@ -1,21 +1,20 @@
 # Fault-Tolerant Implementation of the Deutsch-Jozsa Algorithm
 
-This code implements the Deutsch-Jozsa Algorithm in a fault-tolerant manner and has been tested on the Ion Trap QPU [IonQ Aria-1](https://ionq.com/quantum-systems/aria). The implementation leverages several Python packages, including `qiskit`, `qiskit-ionq`, and `qiskit-braket-provider`.
+Here, we provide the code and experimental data for a small experiment comparing fault-tolerant and non-fault-tolerant implementations of the Deutsch-Jozsa Algorithm reported in [Singh2024](https://arxiv.org/abs/2412.04791). We implemented the Deutsch-Josza algorithm in both a fault-tolerant manner using the [[4,2,2]] quantum error-detecting code and a non-fault-tolerant manner on the Ion Trap QPU [IonQ Aria-1](https://ionq.com/quantum-systems/aria). 
 
-The experiment involves the fault-tolerant implementation of the Deutsch-Jozsa Algorithm, utilizing a small quantum error-detecting code $[[4,2,2]]$.
+The implementation leverages several Python packages, including `qiskit`, `qiskit-ionq`, and `qiskit-braket-provider`.
 
+For any questions, please contact one of the authors of [Singh2024](https://arxiv.org/abs/2412.04791).
 
-For more information you can read :
-
-[Fault-tolerant-DJ-Algorithm](https://arxiv.org/abs/2412.04791)
+Some References:
 [Gottesman2016](https://arxiv.org/abs/1610.03507), 
 [Vuillot2017](https://arxiv.org/abs/1705.08957).
-
+[Singh2024](https://arxiv.org/abs/2412.04791)
 
 ## Organisation
 
-The folder `Bare Circuit Codes`  contains the QASM files and Jupyter notebooks of the bare circuit which are used to run the experiments.
-The folder `Encoded Circuit Codes` contains Jupyter notebooks of encoded circuits used in the experiements.
+The folder `Bare Circuit Codes`  contains the QASM files and Jupyter notebooks of the bare (non-fault-tolerant) circuits implementing the Deutsch-Josza algorithm on all four oracles.
+The folder `Encoded Circuit Codes` contains Jupyter notebooks of encoded (fault-tolerant) circuits implementing the Deutsch-Josza algorithm on all four oracles.
 The folder `Experimental/Bare Circuit Results` and `Experimental/Encoded Circuit Results` contains `.json` files which have all the exact counts of results of the experiments.
 
 ```
