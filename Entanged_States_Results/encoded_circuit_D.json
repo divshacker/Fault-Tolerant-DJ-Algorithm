@@ -1,0 +1,66 @@
+{
+    "braketSchemaHeader": {
+        "name": "braket.task_result.gate_model_task_result",
+        "version": "1"
+    },
+    "measurementProbabilities": {
+        "0000": 0.000244140625,
+        "1000": 0.00244140625,
+        "0100": 0.003662109375,
+        "1100": 0.000244140625,
+        "0010": 0.004638671875,
+        "1010": 0.232666015625,
+        "0110": 0.23486328125,
+        "1110": 0.003173828125,
+        "0001": 0.00537109375,
+        "1001": 0.24267578125,
+        "0101": 0.260498046875,
+        "1101": 0.00537109375,
+        "0011": 0.00024414062499999997,
+        "1011": 0.001953125,
+        "0111": 0.001953125
+    },
+    "resultTypes": [],
+    "measuredQubits": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "taskMetadata": {
+        "braketSchemaHeader": {
+            "name": "braket.task_result.task_metadata",
+            "version": "1"
+        },
+        "id": "arn:aws:braket:us-east-1:516167953808:quantum-task/dd9e6204-f3f3-4975-a551-1360d3556f43",
+        "shots": 4096,
+        "deviceId": "arn:aws:braket:us-east-1::device/qpu/ionq/Aria-1",
+        "deviceParameters": {
+            "braketSchemaHeader": {
+                "name": "braket.device_schema.ionq.ionq_device_parameters",
+                "version": "1"
+            },
+            "paradigmParameters": {
+                "braketSchemaHeader": {
+                    "name": "braket.device_schema.gate_model_parameters",
+                    "version": "1"
+                },
+                "qubitCount": 4,
+                "disableQubitRewiring": true
+            }
+        },
+        "createdAt": "2024-09-05T13:16:12.921Z",
+        "endedAt": "2024-09-05T13:30:13.628Z",
+        "status": "COMPLETED"
+    },
+    "additionalMetadata": {
+        "action": {
+            "braketSchemaHeader": {
+                "name": "braket.ir.openqasm.program",
+                "version": "1"
+            },
+            "inputs": {},
+            "source": "OPENQASM 3.0;\nbit[4] b;\n#pragma braket verbatim\nbox{\ngpi2(0.0) $0;\ngpi(-0.7853981633974483) $0;\ngpi2(3.141592653589793) $0;\ngpi2(1.5707963267948966) $0;\nms(0.0, 0.0, 1.5707963267948966) $0, $1;\ngpi2(3.141592653589793) $0;\ngpi2(-1.5707963267948966) $0;\ngpi2(3.141592653589793) $1;\ngpi2(0.0) $2;\ngpi(-0.7853981633974483) $2;\ngpi2(3.141592653589793) $2;\ngpi2(1.5707963267948966) $2;\nms(0.0, 0.0, 1.5707963267948966) $2, $3;\ngpi2(3.141592653589793) $2;\ngpi2(-1.5707963267948966) $2;\ngpi2(3.141592653589793) $3;\ngpi2(0.0) $1;\ngpi(-1.5707963267948966) $1;\ngpi2(3.141592653589793) $1;\ngpi2(0.0) $1;\ngpi(0.0) $1;\ngpi2(3.141592653589793) $1;\ngpi2(0.0) $2;\ngpi(-1.5707963267948966) $2;\ngpi2(3.141592653589793) $2;\ngpi2(0.0) $3;\ngpi(0.0) $3;\ngpi2(3.141592653589793) $3;\n}\nb[0] = measure $0;\nb[1] = measure $1;\nb[2] = measure $2;\nb[3] = measure $3;"
+        }
+    }
+}
