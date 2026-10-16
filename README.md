@@ -19,29 +19,46 @@ The folder `Experimental/Bare Circuit Results` and `Experimental/Encoded Circuit
 
 ```
 ├── Bare circuit codes
-│   ├── bare_1.qasm
-│   ├── bare_2.qasm
-│   ├── bare_3.qasm
-│   ├── bare_4.qasm
-│   ├── bare_circuit_1.ipynb
-│   ├── bare_circuit_2.ipynb
-│   ├── bare_circuit_3.ipynb
-│   └── bare_circuit_4.ipynb
+│   ├── bare_1.qasm
+│   ├── bare_2.qasm
+│   ├── bare_3.qasm
+│   ├── bare_4.qasm
+│   ├── bare_circuit_1.ipynb
+│   ├── bare_circuit_2.ipynb
+│   ├── bare_circuit_3.ipynb
+│   └── bare_circuit_4.ipynb
 ├── Encoded circuit codes
-│   ├── encoded_circuit_1.ipynb
-│   ├── encoded_circuit_2.ipynb
-│   ├── encoded_circuit_3.ipynb
-│   └── encoded_circuit_4.ipynb
-├── Experimental Results
-│   ├── Bare Circuit Results
-│   │   ├── bare_deutsch_d1.json
-│   │   ├── bare_deutsch_d2.json
-│   │   ├── bare_deutsch_d3.json
-│   │   └── bare_deutsch_d4.json
-│   └── Encoded Circuit Results
-│       ├── encoded_deutsch_d1.json
-│       ├── encoded_deutsch_d2.json
-│       ├── encoded_deutsch_d3.json
-│       └── encoded_deutsch_d4.json
+│   ├── encoded_circuit_1.ipynb
+│   ├── encoded_circuit_2.ipynb
+│   ├── encoded_circuit_3.ipynb
+│   └── encoded_circuit_4.ipynb
+├── Entanged_States_Results
+│   ├── Encoded_Circuit_A.json
+│   ├── Encoded_circuit_E.json
+│   ├── bare_circuit_A.json
+│   ├── bare_circuit_B.json
+│   ├── bare_circuit_C.json
+│   ├── bare_circuit_D.json
+│   ├── bare_circuit_E.json
+│   ├── bare_circuit_F.json
+│   ├── bare_circuit_G.json
+│   ├── bare_circuit_H.json
+│   ├── encoded_circuit_B.json
+│   ├── encoded_circuit_C.json
+│   ├── encoded_circuit_D.json
+│   ├── encoded_circuit_F.json
+│   ├── encoded_circuit_G.json
+│   └── encoded_ciruit_H.json
+├── Experimental-Results
+│   ├── Bare Circuit Results
+│   │   ├── bare_deutsch_d1.json
+│   │   ├── bare_deutsch_d2.json
+│   │   ├── bare_deutsch_d3.json
+│   │   └── bare_deutsch_d4.json
+│   └── Encoded Circuit Results
+│       ├── encoded_deutsch_d1.json
+│       ├── encoded_deutsch_d2.json
+│       ├── encoded_deutsch_d3.json
+│       └── encoded_deutsch_d4.json
 └── README.md
 ```
