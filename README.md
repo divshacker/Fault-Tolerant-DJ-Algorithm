@@ -110,4 +110,4 @@ If you use this code or data, please cite the paper:
 
 ## License
 
-This repository is released under the [MIT License](LICENSE).
+This repository is released under the [MIT License](LICENSE.md).
