@@ -64,8 +64,40 @@ The folder `Entangled_States_Results` contains the results of the entangled-stat
 │       ├── encoded_deutsch_d2.json
 │       ├── encoded_deutsch_d3.json
 │       └── encoded_deutsch_d4.json
-└── README.md
+├── LICENSE.md
+├── README.md
+└── table3_fig4.py
 ```
+
+The script `table3_fig4.py` recomputes Table III and Fig. 4 of the paper from the raw counts in `Experimental-Results` (`python table3_fig4.py /path/to/this/repo`; needs `scipy` and `matplotlib`).
+
+## Deutsch-Jozsa Run Details
+
+Each run used 4096 shots on IonQ Aria-1. File `dN` corresponds to oracle N: d1 is `f(x) = 0`, d2 is `f(x) = x`, d3 is `f(x) = 1 ⊕ x`, d4 is `f(x) = 1`.
+
+### Bare circuits (Microsoft Azure Quantum)
+
+The bare circuits (`Bare circuit codes/bare_N.qasm`) were submitted through Microsoft Azure Quantum. The result files are in Azure's `microsoft.quantum-results.v2` format: `Histogram` gives the counts and `Shots` gives the per-shot outcomes. Each `Outcome` is listed as `[c[1], c[0]]`, so the Deutsch-Jozsa output qubit `q[0]` is the second entry.
+
+| Result file | Circuit | Azure job ID | Submitted (UTC) |
+|---|---|---|---|
+| `bare_deutsch_d1.json` | `bare_1.qasm` | `73595704-a596-11ef-9e85-482ae3b166d5` | 2024-11-18 10:18:27 |
+| `bare_deutsch_d2.json` | `bare_2.qasm` | `0b28ab9a-a590-11ef-9797-482ae3b166d5` | 2024-11-18 09:32:35 |
+| `bare_deutsch_d3.json` | `bare_3.qasm` | `2fda2c08-a594-11ef-9035-482ae3b166d5` | 2024-11-18 10:02:14 |
+| `bare_deutsch_d4.json` | `bare_4.qasm` | `b300b140-a596-11ef-8803-482ae3b166d5` | 2024-11-18 10:20:13 |
+
+The Azure job IDs are time-based (version 1) UUIDs, and the submission times above are the timestamps encoded in them.
+
+### Encoded circuits (Amazon Braket)
+
+The encoded circuits were submitted through Amazon Braket as verbatim native-gate programs with qubit rewiring disabled. Each result file is a Braket task result: the field `measurementProbabilities` maps each bitstring to its observed probability (multiply by 4096 for counts), and the submitted OpenQASM program is stored under `additionalMetadata`. The task ID and times below are copied from `taskMetadata` in each file.
+
+| Result file | Braket quantum task ID | Created (UTC) |
+|---|---|---|
+| `encoded_deutsch_d1.json` | `b84ef362-b74d-4c7b-9da3-077e94637c1d` | 2024-11-19 06:13:39 |
+| `encoded_deutsch_d2.json` | `a16b9fc6-c084-486c-ae67-e138ebadf935` | 2024-11-18 08:15:51 |
+| `encoded_deutsch_d3.json` | `5febaf58-0286-4551-8226-58b223f903ed` | 2024-11-16 10:49:06 |
+| `encoded_deutsch_d4.json` | `9d531fe9-05d5-4b9e-bdf3-041425c45737` | 2024-11-19 06:26:58 |
 
 ## Entangled-States Data (Circuits A to H)
 
